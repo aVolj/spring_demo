@@ -14,7 +14,8 @@
       <configuration>
         <setting name="validation-enabled" value="true" />
         <datasource-mapping>
-          <factory-entry name="entityManagerFactory" />
+          <factory-entry name="entityManagerFactory" value="02b34fb0-9de2-438b-8d18-91ae82d704f8" />
+          <factory-entry name="spring_demo" />
         </datasource-mapping>
         <naming-strategy-map />
       </configuration>

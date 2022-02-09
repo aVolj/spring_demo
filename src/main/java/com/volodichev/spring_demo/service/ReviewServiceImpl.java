@@ -24,4 +24,15 @@ public class ReviewServiceImpl implements ReviewService {
         Optional<Review> reviewResult = reviewRepo.findById(fKey);
         return reviewResult.orElse(null);
     }
+
+    @Override
+    public Review addReview(Review review) {
+        return reviewRepo.save(review);
+    }
+
+    @Override
+    public String deleteReview(ReviewKey key) {
+        reviewRepo.deleteById(key);
+        return "Delete complete for review username = " + key.getUsername() + "and id review " + key.getFilmId();
+    }
 }
